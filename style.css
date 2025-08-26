@@ -31,7 +31,7 @@ main {
     justify-content: center;
     padding: var(--size-3);
     padding-bottom: var(--size-2);
-    width: 20%;
+    width: var(--size-14);
     background-color: var(--surface-3);
     border-radius: var(--radius-3);
 }
@@ -100,4 +100,40 @@ footer a:hover {
 .name {
     color: #fdcd37;
     font-weight: var(--font-weight-7);
+}
+
+@media (max-width: 1520px) {
+    footer {
+        padding: var(--size-5);
+        gap: 0;
+    }
+
+    footer p {
+        max-inline-size: fit-content;
+    }
+}
+
+@media (max-width: 1390px) {
+    footer {
+        display: block;
+    }
+
+    footer p:last-of-type {
+        text-align: left;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: var(--size-5) var(--size-2);
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    main {
+        padding: var(--size-5) var(--size-5);
+        gap: var(--size-5);
+    }
 }
